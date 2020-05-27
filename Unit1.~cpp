@@ -28,15 +28,17 @@ void __fastcall TForm1::Timer_pilkaTimer(TObject *Sender)
         //Odbij od dolu
         if (b->Top+b->Height+5 >=  tlo->Height) y = -y;
         //skucie
-        if (b->Left <= p1->Left -15)
-             {
-        Timer_pilka->Enabled = false;
-        b->Visible=false;
-        } else if (
-                   b->Top > p1->Top - b->Height/2 &&
-                   b->Top + b->Height < p1->Top + p1->Height + b->Height/2  &&
+        //if (b->Left < p1->Left -15)
+        //{
+        //Timer_pilka->Enabled = false;
+        //b->Visible=false;
+        //} else
+        if (
+                   b->Top > p1->Top + b->Height/2 &&
+                   b->Top < p1->Top - p1->Height &&
                    b->Left  <  p1->Left + p1->Width)
                {
+                if (x>0)
                 x = -x;
                }
 

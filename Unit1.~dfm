@@ -26,8 +26,8 @@ object Form1: TForm1
     Brush.Color = clActiveBorder
   end
   object b: TImage
-    Left = 456
-    Top = 48
+    Left = 800
+    Top = 72
     Width = 32
     Height = 32
     AutoSize = True
@@ -339,14 +339,12 @@ object Form1: TForm1
     Top = 40
   end
   object p1_gora: TTimer
-    Enabled = False
     Interval = 20
     OnTimer = p1_goraTimer
     Left = 56
     Top = 80
   end
   object p1_dol: TTimer
-    Enabled = False
     Interval = 20
     OnTimer = p1_dolTimer
     Left = 88
