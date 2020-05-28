@@ -3,7 +3,8 @@ object Form1: TForm1
   Top = 218
   Width = 1044
   Height = 540
-  Caption = 'Form1'
+  Align = alCustom
+  Caption = 'Ping Pong'
   Color = clBtnFace
   UseDockManager = True
   DockSite = True
@@ -13,6 +14,7 @@ object Form1: TForm1
   Font.Name = 'MS Sans Serif'
   Font.Style = []
   OldCreateOrder = False
+  OnCreate = FormCreate
   OnKeyDown = FormKeyDown
   OnKeyUp = FormKeyUp
   PixelsPerInch = 96
@@ -23,11 +25,11 @@ object Form1: TForm1
     Width = 1028
     Height = 501
     Align = alClient
-    Brush.Color = clActiveBorder
+    Brush.Color = clGreen
   end
   object b: TImage
     Left = 488
-    Top = 64
+    Top = 232
     Width = 32
     Height = 32
     AutoSize = True
@@ -333,7 +335,7 @@ object Form1: TForm1
     Transparent = True
   end
   object p2: TImage
-    Left = 928
+    Left = 952
     Top = 192
     Width = 20
     Height = 100
@@ -605,7 +607,24 @@ object Form1: TForm1
     Font.Style = []
     ParentFont = False
     TabOrder = 1
+    Visible = False
     OnClick = ngClick
+  end
+  object ngg: TButton
+    Left = 344
+    Top = 384
+    Width = 289
+    Height = 41
+    Caption = 'NOWA GRA'
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -32
+    Font.Name = 'MS Sans Serif'
+    Font.Style = []
+    ParentFont = False
+    TabOrder = 2
+    Visible = False
+    OnClick = nggClick
   end
   object Timer_pilka: TTimer
     Interval = 15
