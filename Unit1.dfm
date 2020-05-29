@@ -1,8 +1,8 @@
 object Form1: TForm1
-  Left = 339
-  Top = 218
+  Left = 207
+  Top = 187
   Width = 1044
-  Height = 540
+  Height = 604
   Align = alCustom
   Caption = 'Ping Pong'
   Color = clBtnFace
@@ -23,9 +23,10 @@ object Form1: TForm1
     Left = 0
     Top = 0
     Width = 1028
-    Height = 501
+    Height = 565
     Align = alClient
     Brush.Color = clGreen
+    OnContextPopup = tloContextPopup
   end
   object b: TImage
     Left = 488

@@ -192,8 +192,8 @@ void __fastcall TForm1::p2_goraTimer(TObject *Sender)
 
 void __fastcall TForm1::nrClick(TObject *Sender)
 {
-        b->Left = 464;
-        b->Top = 232;
+        b->Left = tlo->Width/2;        //464;
+        b->Top = tlo->Height/2;         // 232;
         b->Visible = true;
         x=-3; y=-3;
         Timer_pilka->Enabled = true;
@@ -271,4 +271,14 @@ void __fastcall TForm1::FormCreate(TObject *Sender)
 //---------------------------------------------------------------------------
 
 
+
+void __fastcall TForm1::tloContextPopup(TObject *Sender, TPoint &MousePos,
+      bool &Handled)
+{
+      p1->Left =  tlo->Left + 40;
+      p1->Top = tlo->Height/2;
+      p2->Left = tlo->Width - 40;
+      p2->Top =  tlo->Height/2;
+}
+//---------------------------------------------------------------------------
 

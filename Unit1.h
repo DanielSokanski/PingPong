@@ -41,6 +41,8 @@ __published:	// IDE-managed Components
         void __fastcall ngClick(TObject *Sender);
         void __fastcall nggClick(TObject *Sender);
         void __fastcall FormCreate(TObject *Sender);
+        void __fastcall tloContextPopup(TObject *Sender, TPoint &MousePos,
+          bool &Handled);
 private:	// User declarations
 public:		// User declarations
         __fastcall TForm1(TComponent* Owner);
